@@ -28,4 +28,6 @@ jobs:
           sleep 5
 
       - name: Run automated tests
+        env:
+         PYTHONPATH: ${{ github.workspace }}             
         run: pytest
